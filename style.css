@@ -1,0 +1,184 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES PRINCIPAIS */
+:root {
+  --cor-principal: #e67e22;
+  --cor-secundaria: #fdf2e9;
+  --cor-texto: #333;
+  --cor-botao: #e67e22;
+  --cor-botao-hover: #cf711f;
+}
+
+/* BODY */
+body {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* SEÇÃO HERO / SOBRE */
+.sobre {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.sobre h2 {
+  margin-bottom: 20px;
+  color: var(--cor-principal);
+}
+
+.sobre p {
+  margin-bottom: 20px;
+}
+
+/* IMAGENS */
+.foto-site,
+.foto-bolodecenoura {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+.foto-paocaseiro {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+.foto-salada {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+
+/* LISTAS */
+ul, ol {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* TÍTULOS INTERNOS */
+h3 {
+  margin-top: 30px;
+  color: var(--cor-principal);
+}
+
+/* BOTÕES */
+button,
+.btn {
+  display: inline-block;
+  background-color: var(--cor-botao);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+/* CATEGORIAS */
+.categorias ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.categorias li {
+  background-color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* RECEITAS (CARDS) */
+.cards-receitas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
